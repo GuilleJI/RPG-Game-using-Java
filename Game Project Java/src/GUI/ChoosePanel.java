@@ -51,6 +51,11 @@ public class ChoosePanel extends JPanel {
         addCharacterStats(myFont);
         addWeaponSelect(myFont);
 
+        JLabel titleLabel = new JLabel("Character Generator");
+        titleLabel.setFont(screenTitle);
+        titleLabel.setBounds(50, 20, 500, 50);
+
+
 
     }
 
