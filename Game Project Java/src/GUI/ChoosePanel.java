@@ -2,6 +2,7 @@ package GUI;
 import Classes.*;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class ChoosePanel extends JPanel {
 
@@ -35,6 +36,14 @@ public class ChoosePanel extends JPanel {
     private static String currentMonsterName;
     private static String weaponType;
     private ImageIcon monsterPic;
+
+    public ChoosePanel() {
+        //set font Object
+        Font myFont = new Font("Blackmoor LET", Font.BOLD, 22);
+        Font screenTitle = new Font("Blackmoor LET", Font.BOLD, 40);
+        Font selectTitle = new Font("Blackmoor LET", Font.BOLD, 30);
+        Font information = new Font("Blackmoor LET", Font.BOLD, 10);
+    }
 
 
 }
