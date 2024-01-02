@@ -168,12 +168,28 @@ public class ChoosePanel extends JPanel {
         add(battleStartBtn);
         add(rerollBtn);
 
+        //Create text fields for displaying random numbers
+        textField1 = new JTextField();
+        textField1.setBounds(650, 170, 50, 30);
+        textField2 = new JTextField();
+        textField2.setBounds(650, 205, 50, 30);
+        textField3 = new JTextField();
+        textField3.setBounds(650, 240, 50, 30);
+        textField4 = new JTextField();
+        textField4.setBounds(650, 275, 50, 30);
+        textField5 = new JTextField();
+        textField5.setBounds(650, 460, 50, 30);
+        textField6 = new JTextField();
+        textField6.setBounds(650, 500, 50, 30);
+        textField7 = new JTextField();
 
-
-
-
-
-
+        add(textField1);
+        add(textField2);
+        add(textField3);
+        add(textField4);
+        add(textField5);
+        add(textField6);
+        getRerollBtn();
 
     }
 
