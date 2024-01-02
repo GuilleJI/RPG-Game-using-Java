@@ -142,6 +142,17 @@ public class ChoosePanel extends JPanel {
         imageLabelWeapon = new JLabel();
         imageLabelWeapon.setBounds(240, 450, 150, 150);
 
+        //Change screen button
+        battleStartBtn = new JButton("Start Game");
+        battleStartBtn.setFont(myFont);
+        battleStartBtn.setBounds(500, 700, 200, 50);
+
+        rerollBtn = new JButton("Reroll");
+        rerollBtn.setFont(myFont);
+        rerollBtn.setBounds(500, 320, 200, 50);
+
+
+
 
 
 
