@@ -124,6 +124,19 @@ public class ChoosePanel extends JPanel {
         nameText.setFont(myFont);
         nameText.setBounds(260, 70, 200, 50);
 
+        //Labels to show dimensions of each shape in a single field
+        characterInformation = new JTextArea();
+        characterInformation.setLineWrap(true);
+        characterInformation.setFont(myFont);
+        characterInformation.setBounds(50, 320, 400,70);
+
+        weaponInformation = new JTextArea();
+        weaponInformation.setLineWrap(true);
+        weaponInformation.setFont(information);
+        weaponInformation.setBounds(50, 630, 400,90);
+
+
+
 
 
     }
