@@ -18,10 +18,12 @@ public class Hammer extends Weapon {
     }
 
     public ImageIcon getHammerPic() {
+
         return hammerPic;
     }
 
     public void setHammerPic(ImageIcon hammerPic){
+
         this.hammerPic = hammerPic;
     }
 

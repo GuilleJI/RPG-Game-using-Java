@@ -22,18 +22,22 @@ public abstract class PlayerCharacter {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public Weapon getWeapon() {
+
         return weapon;
     }
 
     public void setWeapon(Weapon weapon){
+
         this.weapon = weapon;
     }
 

@@ -17,15 +17,18 @@ public class Wizard extends PlayerCharacter {
     }
 
     public ImageIcon getWizardPic() {
+
         return wizardPic;
     }
 
     public void setWizardPic(ImageIcon wizardPic) {
+
         this.wizardPic = wizardPic;
     }
 
 
     public String getWeaponInformString() {
+
         return null;
     }
 

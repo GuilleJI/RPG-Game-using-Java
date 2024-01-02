@@ -16,10 +16,12 @@ public class Warrior extends PlayerCharacter {
     }
 
     public ImageIcon getWarriorPic() {
+
         return warriorPic;
     }
 
     public void setWarriorPic(ImageIcon warriorPic) {
+
         this.warriorPic = warriorPic;
     }
 
@@ -28,10 +30,12 @@ public class Warrior extends PlayerCharacter {
     }
 
     public void setMonsterPic(ImageIcon monsterPic) {
+
         this.monsterPic = monsterPic;
     }
 
     public String getWeaponInformString() {
+
         return null;
     }
 

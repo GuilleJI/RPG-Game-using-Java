@@ -16,18 +16,22 @@ public class Cleric extends PlayerCharacter {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public ImageIcon getClericPic() {
+
         return clericPic;
     }
 
     public void setClericPic(ImageIcon clericPic){
+
         this.clericPic = clericPic;
     }
 
@@ -37,6 +41,7 @@ public class Cleric extends PlayerCharacter {
     }
 
     public String getWeaponInformString() {
+
         return null;
     }
 

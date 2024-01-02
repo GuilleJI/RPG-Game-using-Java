@@ -17,10 +17,12 @@ public class Sword extends Weapon{
     }
 
     public ImageIcon getSwordPic() {
+
         return swordPic;
     }
 
     public void setSwordPic(ImageIcon swordPic){
+
         this.swordPic = swordPic;
     }
 
