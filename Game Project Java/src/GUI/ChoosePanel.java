@@ -83,6 +83,42 @@ public class ChoosePanel extends JPanel {
         chaDef.setBounds(500, 205, 300, 30);
         add(chaDef);
 
+        //Label control for Agility
+        JLabel chaAgi = new JLabel("Agility");
+        chaAgi.setFont(myFont);
+        chaAgi.setBounds(500, 240, 300, 30);
+        add(chaAgi);
+
+        //Label control for Base Attack
+        JLabel chaBaseAtt = new JLabel("Base Attack");
+        chaBaseAtt.setFont(myFont);
+        chaBaseAtt.setBounds(500, 275, 300, 30);
+        add(chaBaseAtt);
+
+        //Label control for "Select your Weapon"
+        JLabel weaponLabel = new JLabel("Select your Weapon");
+        weaponLabel.setFont(selectTitle);
+        weaponLabel.setBounds(50, 400, 300, 50);
+        add(weaponLabel);
+
+        //Label control for Weapon Stats
+        JLabel weaponStatsLabel = new JLabel("Weapon Stats");
+        weaponStatsLabel.setFont(selectTitle);
+        weaponStatsLabel.setBounds(500, 400, 300, 50);
+        add(weaponStatsLabel);
+
+        //Label control for Attack Modifier
+        JLabel weaponAttack = new JLabel("Attack Modifier");
+        weaponAttack.setFont(myFont);
+        weaponAttack.setBounds(500, 460, 290, 30);
+        add(weaponAttack);
+
+        //Label control for Weight
+        JLabel weaponWeight = new JLabel("Weight");
+        weaponWeight.setFont(myFont);
+        weaponWeight.setBounds(500, 500, 300, 30);
+        add(weaponWeight);
+
 
 
     }
