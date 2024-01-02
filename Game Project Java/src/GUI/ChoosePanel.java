@@ -55,6 +55,34 @@ public class ChoosePanel extends JPanel {
         titleLabel.setFont(screenTitle);
         titleLabel.setBounds(50, 20, 500, 50);
 
+        //Label control for name
+        JLabel enterNameLabel = new JLabel("Enter Name:");
+        enterNameLabel.setFont(selectTitle);
+        enterNameLabel.setBounds(50, 70, 200, 50);
+
+        //Label control for Character Type
+        JLabel characterTypeLabel = new JLabel("Character Type");
+        characterTypeLabel.setFont(selectTitle);
+        characterTypeLabel.setBounds(50, 120, 300, 50);
+        add(characterTypeLabel);
+
+        //Label control for Character Stats
+        JLabel characterStatsLabel = new JLabel("Character Stats");
+        characterStatsLabel.setFont(selectTitle);
+        characterStatsLabel.setBounds(500, 120, 300, 50);
+
+        //Label control for Hit Points
+        JLabel chaHit = new JLabel("Hit Points");
+        chaHit.setFont(myFont);
+        chaHit.setBounds(500, 170, 300, 30);
+        add(chaHit);
+
+        //Label control for Defense
+        JLabel chaDef = new JLabel("Defense");
+        chaDef.setFont(myFont);
+        chaDef.setBounds(500, 205, 300, 30);
+        add(chaDef);
+
 
 
     }
