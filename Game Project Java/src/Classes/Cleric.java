@@ -32,4 +32,16 @@ public class Cleric extends PlayerCharacter {
     }
 
 
+    public String getCharacterInformString() {
+        return "Clerics are powerful healers due to the large number of healing and curative magics available to them. They have higher defense but low agility.";
+    }
+
+    public String getWeaponInformString() {
+        return null;
+    }
+
+
+
+
+
 }
