@@ -1,4 +1,10 @@
 package Classes;
 
-public class Weapon {
+public abstract class Weapon {
+
+    //Private Constructors:
+    private int attack;
+    private int weight;
+    private int agility;
+    private int hitPoints;
 }
