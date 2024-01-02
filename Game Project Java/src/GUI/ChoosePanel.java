@@ -193,5 +193,24 @@ public class ChoosePanel extends JPanel {
 
     }
 
+    private void addWeaponSelect(Font myFont) {
+        Font selectTitle = new Font("Baskerville", Font.BOLD, 30 );
+        //Create the Dagger radio button
+        rdoDagger = new JRadioButton("Dagger");
+        rdoDagger.setFont(myFont);
+        rdoDagger.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent arg0){
+                //When the Dagger radio button is selected, get the Dagger object
+                dagger = SecondFrame.getTheDagger();
+                //Update the weapon information label with the Dagger's stats
+                weaponInformation.setText(dagger.getWeaponInformString());
+                //Update the weapon image to show the Dagger
+                swapImageWeapon(dagger.getDaggerPic());
+                //Create the weapon stats panel
+                createWeaponStats();
+            }
+        });
+    }
+
 
 }
