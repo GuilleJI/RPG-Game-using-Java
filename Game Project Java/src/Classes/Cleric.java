@@ -12,7 +12,23 @@ public class Cleric extends PlayerCharacter {
     public Cleric(String name, int baseAttack, int defense, int agility, int hitPoints) {
         super(name, baseAttack, defense, agility, hitPoints);
 
-        clericPic = new ImageIcon(this.getClass().getResource("/Images/Cleric.jpg"))
+        clericPic = new ImageIcon(this.getClass().getResource("/Images/Cleric.jpg"));
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public ImageIcon getClericPic() {
+        return clericPic;
+    }
+
+    public void setClericPic(ImageIcon clericPic){
+        this.clericPic = clericPic;
     }
 
 
