@@ -1,5 +1,12 @@
 package Classes;
 
-public class Warrior {
+import javax.swing.*;
+
+public class Warrior extends PlayerCharacter {
+
+    //Constructors (private):
+    private ImageIcon warriorPic;
+    private ImageIcon monsterPic;
+    private String name;
 
 }
