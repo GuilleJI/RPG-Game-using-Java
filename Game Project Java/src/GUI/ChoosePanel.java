@@ -43,6 +43,9 @@ public class ChoosePanel extends JPanel {
         Font screenTitle = new Font("Blackmoor LET", Font.BOLD, 40);
         Font selectTitle = new Font("Blackmoor LET", Font.BOLD, 30);
         Font information = new Font("Blackmoor LET", Font.BOLD, 10);
+        //Set Panel Properties
+        setLayout(null);
+        setVisible(true);
     }
 
 
