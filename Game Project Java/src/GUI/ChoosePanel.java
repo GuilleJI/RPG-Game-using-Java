@@ -135,6 +135,15 @@ public class ChoosePanel extends JPanel {
         weaponInformation.setFont(information);
         weaponInformation.setBounds(50, 630, 400,90);
 
+        //Label for shape image
+        imageLabel = new JLabel();
+        imageLabel.setBounds(240, 170, 150, 150);
+
+        imageLabelWeapon = new JLabel();
+        imageLabelWeapon.setBounds(240, 450, 150, 150);
+
+
+
 
 
 
