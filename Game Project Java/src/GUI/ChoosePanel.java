@@ -46,6 +46,12 @@ public class ChoosePanel extends JPanel {
         //Set Panel Properties
         setLayout(null);
         setVisible(true);
+        //Create all GUI objects
+        //Radiobutton for each shape
+        addCharacterStats(myFont);
+        addWeaponSelect(myFont);
+
+
     }
 
 
