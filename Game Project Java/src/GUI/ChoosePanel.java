@@ -119,6 +119,11 @@ public class ChoosePanel extends JPanel {
         weaponWeight.setBounds(500, 500, 300, 30);
         add(weaponWeight);
 
+        //Textfield control for name
+        nameText = new JTextField();
+        nameText.setFont(myFont);
+        nameText.setBounds(260, 70, 200, 50);
+
 
 
     }
