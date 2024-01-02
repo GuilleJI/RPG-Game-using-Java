@@ -151,6 +151,22 @@ public class ChoosePanel extends JPanel {
         rerollBtn.setFont(myFont);
         rerollBtn.setBounds(500, 320, 200, 50);
 
+        //Add all controls to Panel
+        add(rdoWarrior);
+        add(rdoWizard);
+        add(rdoCleric);
+        add(rdoDagger);
+        add(rdoHammer);
+        add(rdoSword);
+        add(titleLabel);
+        add(enterNameLabel);
+        add(nameText);
+        add(imageLabel);
+        add(imageLabelWeapon);
+        add(characterInformation);
+        add(weaponInformation);
+        add(battleStartBtn);
+        add(rerollBtn);
 
 
 
