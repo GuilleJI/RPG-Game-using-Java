@@ -46,4 +46,10 @@ public abstract class Weapon {
     public void setHitPoints(int hitPoints) {
         this.hitPoints = hitPoints;
     }
+
+    public String getWeaponInformString() {
+        return "Attack " + attack + ", Weight: " + weight + ", Agility: " + agility + ", Hit Points: " + hitPoints;
+    }
+
+    public abstract String getCharacterInformString();
 }
