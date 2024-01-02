@@ -38,4 +38,12 @@ public abstract class PlayerCharacter {
     }
 
 
+    public abstract String getCharacterInformString();
+
+    public String toString() {
+        return "My name is " + name + ". My weapon is " + (weapon != null? weapon.getWeaponInformString() : "none") + ".";
+    }
+
+    public abstract String getWeaponInformString();
+
 }
