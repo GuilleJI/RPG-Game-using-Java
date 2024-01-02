@@ -9,7 +9,11 @@ public class Cleric extends PlayerCharacter {
     private String name;
 
     //Constructors (public)
-    public Cleric(String name, int baseAttack, int defense, int agility, int hitPoints)
+    public Cleric(String name, int baseAttack, int defense, int agility, int hitPoints) {
+        super(name, baseAttack, defense, agility, hitPoints);
+
+        clericPic = new ImageIcon(this.getClass().getResource("/Images/Cleric.jpg"))
+    }
 
 
 }
