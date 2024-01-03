@@ -3,6 +3,8 @@ import Classes.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ChoosePanel extends JPanel {
 
@@ -274,6 +276,18 @@ public class ChoosePanel extends JPanel {
                 wizard = SecondFrame.getTheWizard();
                 characterInformation.setText(wizard.getCharacterInformString());
                 swapImages(wizard.getWizardPic());
+                createCharacterStats();
+            }
+        });
+
+        //Create Cleric radio button
+        rdoCleric = new JRadioButton("Cleric");
+        rdoCleric.setFont(myFont);
+        rdoCleric.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                cleric = SecondFrame.getTheCleric();
+                characterInformation.setText(cleric.getCharactorInformString());
+                swapImages(cleric.getClericPic());
                 createCharacterStats();
             }
         });
