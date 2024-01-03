@@ -5,6 +5,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
+import java.util.Random;
 
 public class ChoosePanel extends JPanel {
 
@@ -30,7 +32,7 @@ public class ChoosePanel extends JPanel {
     private static JTextField textField2;
     private static JTextField textField3;
     private static JTextField textField4;
-    private static JTextField textField5
+    private static JTextField textField5;
     private static JTextField textField6;
     private static JTextField textField7;
 
