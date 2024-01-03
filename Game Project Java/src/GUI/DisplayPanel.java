@@ -60,10 +60,14 @@ public class DisplayPanel extends JPanel {
             secondFrame.dispose(); //Close the current SecondFrame
         });
 
-
-
-
-
+        //Add components to the panel
+        add(choiceLabel);
+        add(displayText);
+        add(characterImageLabel);
+        add(monsterImageLabel);
+        add(backButton);
     }
+
+
 
 }
