@@ -491,4 +491,12 @@ public JButton getBattleStartBtn() {
 
     }
 
+    public static String getCharacterType() {
+        return CharacterType;
+    }
+
+    public static String getWeaponType() {
+        return weaponType;
+    }
+
 }
