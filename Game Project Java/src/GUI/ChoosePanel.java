@@ -246,6 +246,8 @@ public class ChoosePanel extends JPanel {
         rdoSword.setBounds(50, 520, 150, 50);
         rdoHammer.setBounds(50, 580, 150, 50);
 
+        //ButtonGroup to group the radio buttons
+
 
 
     }
