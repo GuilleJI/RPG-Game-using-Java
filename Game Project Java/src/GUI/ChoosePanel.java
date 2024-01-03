@@ -421,6 +421,15 @@ public class ChoosePanel extends JPanel {
         }
         return data;
     }
+    //Get the random monster number
+    public static int[] getSelectMonster(){
+
+        int[] monsterStats = new int[2];
+        for (int i = 0; i < 2; i++) {
+            monsterStats[i] = (int) (Math.random() * 100);
+        }
+        return monsterStats;
+    }
 
 
 
