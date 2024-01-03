@@ -368,6 +368,19 @@ public class ChoosePanel extends JPanel {
         }
     }
 
+    public void createWeaponStats() {
+        if(rdoDagger.isSelected()) {
+            //Create 4 random numbers and put them in text boxes
+            int[] nums = new int[2];
+            for (int i = 0; i < nums.length; i++) {
+                nums[i] = (int) (Math.random() * 50);
+            }
+            textField5.setText(String.valueOf(nums[0]));
+            textField6.setText(String.valueOf(nums[1]));
+            weaponType = "Dagger";
+        }
+    }
+
 
 
 }
