@@ -92,6 +92,19 @@ public class DisplayPanel extends JPanel {
 
         //Update display text with character information
         displayText.setText(text);
+
+        //Display the selected monster image and name
+        if(ChoosePanel.getMonsterName().equals("Grunk the Mighty Bouldercrusher")){
+            monsterPic = new ImageIcon(this.getClass().getResource("/Images/Monster 1.jpg"));
+            monster = "Grunk the Mighty Bouldercrusher";
+        }else if (ChoosePanel.getMonsterName().equals("Infernabeast, Tormentaurox")){
+            monsterPic = new ImageIcon(this.getClass().getResource("/Images/Monster 2.jpg"));
+            monster = "Infernabeast, Tormentaurox";
+        } else {
+            monsterPic = new ImageIcon(this.getClass().getResource("/Images/Monster 3.jpg"));
+            monster = "Maelroth the Abyssal Sovereign";
+        }
+
     }
 
 
