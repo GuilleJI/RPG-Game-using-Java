@@ -265,6 +265,18 @@ public class ChoosePanel extends JPanel {
                 createCharacterStats();
             }
         });
+
+        //Create Wizard radio button
+        rdoWizard = new JRadioButton("Wizard");
+        rdoWizard.setFont(myFont);
+        rdoWizard.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0){
+                wizard = SecondFrame.getTheWizard();
+                characterInformation.setText(wizard.getCharacterInformString());
+                swapImages(wizard.getWizardPic());
+                createCharacterStats();
+            }
+        });
     }
 
 
