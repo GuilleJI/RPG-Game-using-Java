@@ -241,6 +241,12 @@ public class ChoosePanel extends JPanel {
                 createWeaponStats();
             }
         });
+        //Set the bounds for the Dagger, Sword, and Hammer radio button
+        rdoDagger.setBounds(50, 460, 150, 50);
+        rdoSword.setBounds(50, 520, 150, 50);
+        rdoHammer.setBounds(50, 580, 150, 50);
+
+
 
     }
 
