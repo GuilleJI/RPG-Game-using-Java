@@ -35,6 +35,15 @@ public class DisplayPanel extends JPanel {
         choiceLabel.setFont(new Font("Blackmoor LET", Font.BOLD, 50));
         choiceLabel.setBounds(150, 10, 480, 50);
 
+        //Create and set the text area
+        displayText = new JTextArea();
+        displayText.setBounds(50, 350, 650, 270);
+        displayText.setFont(myFont);
+        displayText.setLineWrap(true);
+        displayText.setEnabled(false);
+        displayText.setWrapStyleWord(true);
+
+
 
     }
 
