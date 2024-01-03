@@ -29,6 +29,13 @@ public class DisplayPanel extends JPanel {
 
         //Set panel layout and properties
         setLayout(null);
+
+        //Creating and set the title label
+        JLabel choiceLabel = new JLabel("Crown of Eldoria: Chronicles of the Enchanted Realm");
+        choiceLabel.setFont(new Font("Blackmoor LET", Font.BOLD, 50));
+        choiceLabel.setBounds(150, 10, 480, 50);
+
+
     }
 
 }
