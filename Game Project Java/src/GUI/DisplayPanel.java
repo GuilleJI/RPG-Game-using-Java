@@ -43,6 +43,14 @@ public class DisplayPanel extends JPanel {
         displayText.setEnabled(false);
         displayText.setWrapStyleWord(true);
 
+        //Create and set the character and monster image labels
+        characterImageLabel = new JLabel();
+        characterImageLabel.setBounds(200, 150, 150, 150);
+        monsterImageLabel = new JLabel();
+        monsterImageLabel.setBounds(400, 150, 150, 150);
+
+
+
 
 
     }
