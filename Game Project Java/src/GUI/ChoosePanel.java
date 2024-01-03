@@ -247,9 +247,10 @@ public class ChoosePanel extends JPanel {
         rdoHammer.setBounds(50, 580, 150, 50);
 
         //ButtonGroup to group the radio buttons
-
-
-
+        ButtonGroup grpColorRadios = new ButtonGroup();
+        grpColorRadios.add(rdoDagger);
+        grpColorRadios.add(rdoSword);
+        grpColorRadios.add(rdoHammer);
     }
 
 
