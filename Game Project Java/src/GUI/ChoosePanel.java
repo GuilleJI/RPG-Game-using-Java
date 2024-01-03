@@ -430,7 +430,65 @@ public class ChoosePanel extends JPanel {
         }
         return monsterStats;
     }
+// Returns the Start Battle button and sets its ActionListener to create a new character based on user input and pass it to the result window
+// If no character is selected, nothing happens
+// Uses getTextFieldsData() to get character stats and nameText to get character name
+// Uses rdoWarrior, rdoWizard, and rdoCleric to determine which character type to create
+public JButton getBattleStartBtn() {
+        battleStartBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int[] stats = getTextFieldsData();
+                String name = nameText.getText();
+                PlayerCharacter character = null;
 
+                if(rdoWarrior.isSelected()) {
+                    character = new PlayerCharacter(name, stats[0], stats[1], stats[2], stats[3]) {
+                        @Override
+                        public String getCharacterInformString() {
+                            return null;
+                        }
 
+                        @Override
+                        public String getWeaponInformString() {
+                            return null;
+                        }
+                    };
+                }else if (rdoWizard.isSelected()) {
+                    character = new PlayerCharacter(name, stats[0], stats[1], stats[2], stats[3]) {
+                        @Override
+                        public String getCharacterInformString() {
+                            return null;
+                        }
+
+                        @Override
+                        public String getWeaponInformString() {
+                            return null;
+                        }
+                    };
+                }else if (rdoCleric.isSelected()) {
+                    character = new PlayerCharacter(name, stats[0], stats[1], stats[2], stats[3]) {
+                        @Override
+                        public String getCharacterInformString() {
+                            return null;
+                        }
+
+                        @Override
+                        public String getWeaponInformString() {
+                            return null;
+                        }
+                    };
+                }
+
+                if (character != null){
+                    //Update the result window with the chosen character details
+                    //or pass the character instance to the result window
+                }
+            }
+        });
+
+        return battleStartBtn;
+
+    }
 
 }
