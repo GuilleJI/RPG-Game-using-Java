@@ -210,6 +210,23 @@ public class ChoosePanel extends JPanel {
                 createWeaponStats();
             }
         });
+
+        //Create the Sword radio button
+        rdoSword = new JRadioButton("Sword");
+        rdoSword.setFont(myFont);
+        rdoSword.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0){
+                //When the Sword radio button is selected, get the Sword object
+                sword = SecondFrame.getTheSwrod();
+                //Update the weapon information label with the Sword's stats
+                weaponInformation.setText(sword.getWeaponInformString());
+                //Update the weapon image to show the Sword
+                swapImagesWeapon(sword.getSwordPic());
+                //Create the weapon stats panel
+                createWeaponStats();
+            }
+        });
+
     }
 
 
