@@ -68,6 +68,17 @@ public class DisplayPanel extends JPanel {
         add(backButton);
     }
 
+    public void displayChoice() {
+        //Get character instances from SecondFrame
+        warrior = SecondFrame.getTheWarrior();
+        wizard = SecondFrame.getTheWizard();
+        cleric = SecondFrame.getTheCleric();
+
+        //Initialize variables
+        String monster = "";
+        String text = "";
+    }
+
 
 
 }
