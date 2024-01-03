@@ -253,5 +253,19 @@ public class ChoosePanel extends JPanel {
         grpColorRadios.add(rdoHammer);
     }
 
+    private void addCharacterStats(Font myFont){
+        //Create Warrior radio button
+        rdoWarrior = new JRadioButton("Warrior");
+        rdoWarrior.setFont(myFont);
+        rdoWarrior.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0){
+                warrior = SecondFrame.getTheWarrior();
+                characterInformation.setText(warrior.getCharacterInformString());
+                swapImages(warrior.getWarriorPic());
+                createCharacterStats();
+            }
+        });
+    }
+
 
 }
