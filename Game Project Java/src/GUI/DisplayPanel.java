@@ -49,6 +49,17 @@ public class DisplayPanel extends JPanel {
         monsterImageLabel = new JLabel();
         monsterImageLabel.setBounds(400, 150, 150, 150);
 
+        //Create a back button and add an action listener
+        JButton backButton = new JButton("PLAY AGAIN!");
+        backButton.setFont(new Font("Blackmoor LET", Font.BOLD, 20));
+        backButton.setBounds(280, 650, 200, 50);
+        backButton.addActionListener(e -> {
+
+            initial = false;
+            SwingUtilities.invokeLater(MainFrame::new);
+            secondFrame.dispose(); //Close the current SecondFrame
+        });
+
 
 
 
