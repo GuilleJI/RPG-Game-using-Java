@@ -291,6 +291,16 @@ public class ChoosePanel extends JPanel {
                 createCharacterStats();
             }
         });
+
+        rdoWarrior.setBounds(50, 170, 150, 50);
+        rdoWizard.setBounds(50, 220, 150, 50);
+        rdoCleric.setBounds(50, 270, 150, 50);
+
+        //ButtonGroup to group the radio buttons
+        ButtonGroup grpColorRadios = new ButtonGroup();
+        grpColorRadios.add(rdoWarrior);
+        grpColorRadios.add(rdoWizard);
+        grpColorRadios.add(rdoCleric);
     }
 
 
