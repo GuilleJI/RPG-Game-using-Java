@@ -226,6 +226,21 @@ public class ChoosePanel extends JPanel {
                 createWeaponStats();
             }
         });
+        //Create the Hammer radio button
+        rdoHammer = new JRadioButton("Hammer");
+        rdoHammer.setFont(myFont);
+        rdoHammer.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0){
+                //When the Hammer radio button is selected get the Hammer object
+                hammer = SecondFrame.getTheHammer();
+                //Update the weapon information label with the Hammer's stats
+                weaponInformation.setText(hammer.getWeaponInformString());
+                //Update the weapon image to show the Hammer
+                swapImagesWeapon(hammer.getHammerPic());
+                //Create the weapon stats panel
+                createWeaponStats();
+            }
+        });
 
     }
 
