@@ -378,7 +378,16 @@ public class ChoosePanel extends JPanel {
             textField5.setText(String.valueOf(nums[0]));
             textField6.setText(String.valueOf(nums[1]));
             weaponType = "Dagger";
-        }
+
+        } else if (rdoHammer.isSelected()) {
+            //Create 4 random numbers and put them in text boxes
+            int[] nums = new int[2];
+            for (int i = 0; i < nums.length; i++) {
+                nums[i] = (int) (Math.random() * 50);
+            }
+            textField5.setText(String.valueOf(nums[0]));
+            textField6.setText(String.valueOf(nums[1]));
+            weaponType = "Hammer";
     }
 
 
