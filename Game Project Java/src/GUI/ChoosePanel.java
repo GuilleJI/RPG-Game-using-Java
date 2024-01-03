@@ -401,4 +401,27 @@ public class ChoosePanel extends JPanel {
 
         }
     }
+
+    //This method retrieves data from six text fields and returns an integer array containing the date.
+    //if a text field is empty or contains a non-integer value, the corresponding element in the returned array is set to 0.
+    //@return an integer array containing the data from the text fields
+
+    public static int[] getTextFieldsData() {
+        int[] data = new int[6];
+        String value = textField1.getText().trim();
+        if (value.isEmpty()) {
+            Arrays.fill(data, 0);
+        }else{
+            data[0] = Integer.parseInt(textField1.getText());
+            data[1] = Integer.parseInt(textField2.getText());
+            data[2] = Integer.parseInt(textField3.getText());
+            data[3] = Integer.parseInt(textField4.getText());
+            data[4] = Integer.parseInt(textField5.getText());
+            data[5] = Integer.parseInt(textField6.getText());
+        }
+        return data;
+    }
+
+
+
 }
