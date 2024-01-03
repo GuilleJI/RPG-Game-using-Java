@@ -130,12 +130,12 @@ public class ChoosePanel extends JPanel {
         characterInformation = new JTextArea();
         characterInformation.setLineWrap(true);
         characterInformation.setFont(myFont);
-        characterInformation.setBounds(50, 320, 400,70);
+        characterInformation.setBounds(50, 320, 400, 70);
 
         weaponInformation = new JTextArea();
         weaponInformation.setLineWrap(true);
         weaponInformation.setFont(information);
-        weaponInformation.setBounds(50, 630, 400,90);
+        weaponInformation.setBounds(50, 630, 400, 90);
 
         //Label for shape image
         imageLabel = new JLabel();
@@ -196,12 +196,12 @@ public class ChoosePanel extends JPanel {
     }
 
     private void addWeaponSelect(Font myFont) {
-        Font selectTitle = new Font("Baskerville", Font.BOLD, 30 );
+        Font selectTitle = new Font("Baskerville", Font.BOLD, 30);
         //Create the Dagger radio button
         rdoDagger = new JRadioButton("Dagger");
         rdoDagger.setFont(myFont);
-        rdoDagger.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent arg0){
+        rdoDagger.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
                 //When the Dagger radio button is selected, get the Dagger object
                 dagger = SecondFrame.getTheDagger();
                 //Update the weapon information label with the Dagger's stats
@@ -217,7 +217,7 @@ public class ChoosePanel extends JPanel {
         rdoSword = new JRadioButton("Sword");
         rdoSword.setFont(myFont);
         rdoSword.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0){
+            public void actionPerformed(ActionEvent arg0) {
                 //When the Sword radio button is selected, get the Sword object
                 sword = SecondFrame.getTheSwrod();
                 //Update the weapon information label with the Sword's stats
@@ -232,7 +232,7 @@ public class ChoosePanel extends JPanel {
         rdoHammer = new JRadioButton("Hammer");
         rdoHammer.setFont(myFont);
         rdoHammer.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0){
+            public void actionPerformed(ActionEvent arg0) {
                 //When the Hammer radio button is selected get the Hammer object
                 hammer = SecondFrame.getTheHammer();
                 //Update the weapon information label with the Hammer's stats
@@ -255,12 +255,12 @@ public class ChoosePanel extends JPanel {
         grpColorRadios.add(rdoHammer);
     }
 
-    private void addCharacterStats(Font myFont){
+    private void addCharacterStats(Font myFont) {
         //Create Warrior radio button
         rdoWarrior = new JRadioButton("Warrior");
         rdoWarrior.setFont(myFont);
         rdoWarrior.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0){
+            public void actionPerformed(ActionEvent arg0) {
                 warrior = SecondFrame.getTheWarrior();
                 characterInformation.setText(warrior.getCharacterInformString());
                 swapImages(warrior.getWarriorPic());
@@ -272,7 +272,7 @@ public class ChoosePanel extends JPanel {
         rdoWizard = new JRadioButton("Wizard");
         rdoWizard.setFont(myFont);
         rdoWizard.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent arg0){
+            public void actionPerformed(ActionEvent arg0) {
                 wizard = SecondFrame.getTheWizard();
                 characterInformation.setText(wizard.getCharacterInformString());
                 swapImages(wizard.getWizardPic());
@@ -303,19 +303,19 @@ public class ChoosePanel extends JPanel {
         grpColorRadios.add(rdoCleric);
     }
 
-    public void swapImages(ImageIcon image){
+    public void swapImages(ImageIcon image) {
         imageLabel.setIcon(image);
     }
 
-    public void swapImagesWeapon(ImageIcon image){
+    public void swapImagesWeapon(ImageIcon image) {
 
         imageLabelWeapon.setIcon(image);
     }
 
-    private void getRerollBtn(){
+    private void getRerollBtn() {
         //Reroll button action listener
-        rerollBtn.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
+        rerollBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
                 createCharacterStats();
             }
         });
@@ -323,12 +323,12 @@ public class ChoosePanel extends JPanel {
 
     public void createCharacterStats() {
         String name = nameText.getText();
-        if(rdoWarrior.isSelected()) {
+        if (rdoWarrior.isSelected()) {
             warrior = SecondFrame.getTheWarrior();
             warrior.setName(name);
             //Create 4 random numbers and put them in text boxes
             int[] nums = new int[4];
-            for (int i =0; i < nums.length; i++){
+            for (int i = 0; i < nums.length; i++) {
                 nums[i] = (int) (Math.random() * 100);
             }
             textField1.setText(String.valueOf(nums[0]));
@@ -338,12 +338,12 @@ public class ChoosePanel extends JPanel {
             textField7.setText("Warrior");
             CharacterType = "Warrior";
 
-        }else if (rdoWizard.isSelected()) {
+        } else if (rdoWizard.isSelected()) {
             //Create 4 random numbers and put them in text boxes
             wizard = SecondFrame.getTheWizard();
             wizard.setName(name);
             int[] nums = new int[4];
-            for (int i = 0; i < nums.length; i++){
+            for (int i = 0; i < nums.length; i++) {
                 nums[i] = (int) (Math.random() * 100);
             }
             textField1.setText(String.valueOf(nums[0]));
@@ -352,12 +352,12 @@ public class ChoosePanel extends JPanel {
             textField4.setText(String.valueOf(nums[3]));
             CharacterType = "Wizard";
 
-        }else if (rdoCleric.isSelected()){
+        } else if (rdoCleric.isSelected()) {
             //Create 4 random numbers and put them in text boxes
             cleric = SecondFrame.getTheCleric();
             cleric.setName(name);
             int[] nums = new int[4];
-            for (int i =0; i < nums.length; i++){
+            for (int i = 0; i < nums.length; i++) {
                 nums[i] = (int) (Math.random() * 100);
             }
             textField1.setText(String.valueOf(nums[0]));
@@ -369,7 +369,7 @@ public class ChoosePanel extends JPanel {
     }
 
     public void createWeaponStats() {
-        if(rdoDagger.isSelected()) {
+        if (rdoDagger.isSelected()) {
             //Create 4 random numbers and put them in text boxes
             int[] nums = new int[2];
             for (int i = 0; i < nums.length; i++) {
@@ -388,8 +388,9 @@ public class ChoosePanel extends JPanel {
             textField5.setText(String.valueOf(nums[0]));
             textField6.setText(String.valueOf(nums[1]));
             weaponType = "Hammer";
+
+        }
+
+
     }
-
-
-
 }
