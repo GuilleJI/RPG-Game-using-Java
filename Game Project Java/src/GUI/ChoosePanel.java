@@ -303,5 +303,43 @@ public class ChoosePanel extends JPanel {
         grpColorRadios.add(rdoCleric);
     }
 
+    public void swapImages(ImageIcon image){
+        imageLabel.setIcon(image);
+    }
+
+    public void swapImagesWeapon(ImageIcon image){
+
+        imageLabelWeapon.setIcon(image);
+    }
+
+    private void getRerollBtn(){
+        //Reroll button action listener
+        rerollBtn.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                createCharacterStats();
+            }
+        });
+    }
+
+    public void createCharacterStats() {
+        String name = nameText.getText();
+        if(rdoWarrior.isSelected()) {
+            warrior = SecondFrame.getTheWarrior();
+            warrior.setName(name);
+            //Create 4 random numbers and put them in text boxes
+            int[] nums = new int[4];
+            for (int i =0; i < nums.length; i++){
+                nums[i] = (int) (Math.random() * 100);
+            }
+            textField1.setText(String.valueOf(nums[0]));
+            textField2.setText(String.valueOf(nums[1]));
+            textField3.setText(String.valueOf(nums[2]));
+            textField4.setText(String.valueOf(nums[3]));
+            textField7.setText("Warrior");
+            CharacterType = "Warrior";
+        }
+    }
+
+
 
 }
