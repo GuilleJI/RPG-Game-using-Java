@@ -77,6 +77,21 @@ public class DisplayPanel extends JPanel {
         //Initialize variables
         String monster = "";
         String text = "";
+
+        //Display character image and information based on the selected character
+        if(warrior.getName() != null && !warrior.getName().isEmpty()){
+            swapImages(warrior.getWarriorPic());
+            text = warrior.toString();
+        } else if (wizard.getName() != null && !wizard.getName().isEmpty()){
+            swapImages(wizard.getWizardPic());
+            text = wizard.toString();
+        } else if (cleric.getName() != null && !cleric.getName().isEmpty()){
+            swapImages(cleric.getClericPic());
+            text = cleric.toString();
+        }
+
+        //Update display text with character information
+        displayText.setText(text);
     }
 
 
