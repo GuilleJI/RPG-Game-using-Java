@@ -337,6 +337,20 @@ public class ChoosePanel extends JPanel {
             textField4.setText(String.valueOf(nums[3]));
             textField7.setText("Warrior");
             CharacterType = "Warrior";
+
+        }else if (rdoWizard.isSelected()) {
+            //Create 4 random numbers and put them in text boxes
+            wizard = SecondFrame.getTheWizard();
+            wizard.setName(name);
+            int[] nums = new int[4];
+            for (int i = 0; i < nums.length; i++){
+                nums[i] = (int) (Math.random() * 100);
+            }
+            textField1.setText(String.valueOf(nums[0]));
+            textField2.setText(String.valueOf(nums[1]));
+            textField3.setText(String.valueOf(nums[2]));
+            textField4.setText(String.valueOf(nums[3]));
+            CharacterType = "Wizard";
         }
     }
 
