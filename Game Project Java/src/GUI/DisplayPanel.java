@@ -26,6 +26,9 @@ public class DisplayPanel extends JPanel {
         this.secondFrame = secondFrame;
         //Create and set font for the text
         Font myFont = new Font ("Baskerville", Font.BOLD, 20);
+
+        //Set panel layout and properties
+        setLayout(null);
     }
 
 }
