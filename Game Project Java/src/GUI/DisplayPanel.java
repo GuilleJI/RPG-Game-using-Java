@@ -105,6 +105,15 @@ public class DisplayPanel extends JPanel {
             monster = "Maelroth the Abyssal Sovereign";
         }
 
+        //Create and set player and monster labels
+        JLabel playerLabel = new JLabel("Player :" + ChoosePanel.getCharacterType());
+        playerLabel.setFont(new Font("Baskerville", Font.BOLD, 30));
+        playerLabel.setBounds(170, 100, 400, 50);
+
+        JLabel monsterLabel = new JLabel("Monster :" + monster);
+        monsterLabel.setFont(new Font("Baskerville", Font.BOLD, 30));
+        monsterLabel.setBounds(400, 100, 400, 50);
+
     }
 
 
