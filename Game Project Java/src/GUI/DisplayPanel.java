@@ -114,6 +114,13 @@ public class DisplayPanel extends JPanel {
         monsterLabel.setFont(new Font("Baskerville", Font.BOLD, 30));
         monsterLabel.setBounds(400, 100, 400, 50);
 
+        //Add player and monster label to the panel
+        add(playerLabel);
+        add(monsterLabel);
+
+        //Set the monster image
+        monsterImageLabel.setIcon(monsterPic);
+
     }
 
 
