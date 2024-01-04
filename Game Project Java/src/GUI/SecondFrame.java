@@ -62,4 +62,28 @@ public class SecondFrame extends JFrame {
         theMonster = new Monster("");
     }
 
+    //Getter and Setter methods for characters and weapons
+
+    public static Warrior getTheWarrior() {return theWarrior;}
+    public static void setTheWarrior(Warrior warrior) {
+        theWarrior = warrior;
+    }
+    public static Wizard getTheWizard() {
+        return theWizard;
+    }
+    public static void setTheWizard(Wizard wizard) {
+        theWizard = wizard;
+    }
+    public static Cleric getTheCleric() {
+        return theCleric;
+    }
+    public static void setTheCleric(Cleric cleric) {
+        theCleric = cleric;
+    }
+    public static Dagger getTheDagger() {return theDagger;}
+    public static Sword getTheSword() {return theSword;}
+    public static Hammer getTheHammer() {
+        return theHammer;
+    }
+
 }
