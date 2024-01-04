@@ -1,5 +1,7 @@
 package Classes;
 
+import GUI.ChoosePanel;
+
 import javax.swing.*;
 
 public class Cleric extends PlayerCharacter {
@@ -33,6 +35,33 @@ public class Cleric extends PlayerCharacter {
     public void setClericPic(ImageIcon clericPic){
 
         this.clericPic = clericPic;
+    }
+
+    public String toString() {
+        int[] stats = ChoosePanel.getTextFieldsData();
+        int[] monsStats = ChoosePanel.getSelectMonster();
+        String monsterName = ChoosePanel.getMonsterName();
+        return String.format("Player : %-10s\n---------------------" +
+                        "\nClass  : %-10s" +
+                        "\nHP     : %-3d               Attack Point : %-3d          Defense : %-3d          Agility : %-3d" +
+                        "\nWeapon : %-13s Weight : %-3d               Attack Mod : %-3d" +
+                        "\n\n" +
+
+                        "Monster Name : %-10s\n---------------------" +
+                        "\nHP       : %-3d               Defence     : %-3d          Base Attack : %-3d",
+                name,
+                ChoosePanel.getCharacterType(),
+                100,
+                stats[0],
+                stats[1],
+                stats[2],
+                ChoosePanel.getWeaponType(),
+                stats[5],
+                stats[4],
+                monsterName,
+                50,
+                monsStats[0],
+                monsStats[1]);
     }
 
 
