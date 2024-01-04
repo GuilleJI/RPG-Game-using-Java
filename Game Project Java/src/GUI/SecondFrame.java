@@ -54,7 +54,12 @@ public class SecondFrame extends JFrame {
         theSword = new Sword(0,0);
         theHammer = new Hammer(0,0);
 
+        //Create characters
+        theWarrior = new Warrior("Warrior", data[0], data[1], data[2], data[3]);
+        theWizard = new Wizard("Wizard", data[0], data[1], data[2], data[3]);
+        theCleric = new Cleric("Cleric", data[0], data[1], data[2], data[3]);
 
+        theMonster = new Monster("");
     }
 
 }
