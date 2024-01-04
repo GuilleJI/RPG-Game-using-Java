@@ -37,6 +37,18 @@ public class SecondFrame extends JFrame {
         add(displayScreen);
         displayScreen.setBackground(Color.LIGHT_GRAY); //Added Background color for DisplayScreen
 
+        //Navigate to display screen
+        JButton displayBtn = chooseScreen.getStartBattleBtn();
+        displayBtn.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent arg0){
+                chooseScreen.setVisible(false);
+                displayScreen.displayChoice();
+                displayScreen.setVisible(true);
+            }
+        });
+
+        data = ChoosePanel.getTextFieldsData();
+
 
     }
 
