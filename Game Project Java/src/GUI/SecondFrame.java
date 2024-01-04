@@ -49,6 +49,11 @@ public class SecondFrame extends JFrame {
 
         data = ChoosePanel.getTextFieldsData();
 
+        //Create list of weapons
+        theDagger = new Dagger(0,0);
+        theSword = new Sword(0,0);
+        theHammer = new Hammer(0,0);
+
 
     }
 
