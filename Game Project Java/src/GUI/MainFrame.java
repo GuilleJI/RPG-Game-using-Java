@@ -27,5 +27,14 @@ public class MainFrame extends JFrame {
         subPanel.add(Box.createRigidArea(new Dimension(0, 100)));
         subPanel.add(imageLabel);
 
+        JButton startButton = new JButton("Let the Quest Begin!!");
+        startButton.setFont(new Font("Baskerville", Font.BOLD, 15));
+        startButton.addActionListener(e -> {
+            // Add the code to handle button click and change to the next page here
+            SecondFrame secondFrame = new SecondFrame();
+            secondFrame.setVisible(true);
+            dispose();
+        });
+
     }
 }
