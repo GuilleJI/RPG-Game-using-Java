@@ -120,9 +120,16 @@ public class DisplayPanel extends JPanel {
 
         //Set the monster image
         monsterImageLabel.setIcon(monsterPic);
-
     }
 
+    //Swap character images based on the selected character
 
+    public void swapImages(ImageIcon image){
+        characterImageLabel.setIcon(image);
+    }
 
 }
+
+
+
+
