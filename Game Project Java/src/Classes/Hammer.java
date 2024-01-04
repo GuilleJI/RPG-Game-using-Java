@@ -14,7 +14,7 @@ public class Hammer extends Weapon {
         super(attack, weight);
 
         //Set image for this shape
-        hammerPic = new ImageIcon(this.getClass().getResource("/Image/Hammer.jpg"));
+        hammerPic = new ImageIcon(this.getClass().getResource("/Images/Hammer.jpg"));
     }
 
     public ImageIcon getHammerPic() {

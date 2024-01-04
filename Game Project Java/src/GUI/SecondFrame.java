@@ -4,6 +4,8 @@ import Classes.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class SecondFrame extends JFrame {
 
@@ -38,7 +40,7 @@ public class SecondFrame extends JFrame {
         displayScreen.setBackground(Color.LIGHT_GRAY); //Added Background color for DisplayScreen
 
         //Navigate to display screen
-        JButton displayBtn = chooseScreen.getStartBattleBtn();
+        JButton displayBtn = chooseScreen.getBattleStartBtn();
         displayBtn.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent arg0){
                 chooseScreen.setVisible(false);
@@ -86,6 +88,5 @@ public class SecondFrame extends JFrame {
         return theHammer;
     }
 
-    public static Sword getTheSwrod() {
-    }
+
 }

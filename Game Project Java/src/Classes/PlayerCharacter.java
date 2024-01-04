@@ -1,5 +1,7 @@
 package Classes;
 
+import GUI.ChoosePanel;
+
 public abstract class PlayerCharacter {
 
     //Constructors (private)
@@ -15,7 +17,7 @@ public abstract class PlayerCharacter {
 
     public PlayerCharacter(String name, int attack, int weight, int agility, int hitPoints){
         this.name = name;
-        int[] stats = new int[0];
+        int[] stats = ChoosePanel.getTextFieldsData(); //Importing GUI.ChoosePanel;
         this.baseAttack = stats[0];
         this.defense = stats[1];
         this.agility = stats[2];

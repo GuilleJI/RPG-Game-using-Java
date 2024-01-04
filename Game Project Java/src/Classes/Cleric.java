@@ -75,7 +75,7 @@ public class Cleric extends PlayerCharacter {
     }
 
 
-
-
-
+    public String getCharactorInformString() {
+        return null;
+    }
 }

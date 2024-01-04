@@ -222,7 +222,7 @@ public class ChoosePanel extends JPanel {
         rdoSword.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 //When the Sword radio button is selected, get the Sword object
-                sword = SecondFrame.getTheSwrod();
+                sword = SecondFrame.getTheSword();
                 //Update the weapon information label with the Sword's stats
                 weaponInformation.setText(sword.getWeaponInformString());
                 //Update the weapon image to show the Sword
@@ -256,6 +256,9 @@ public class ChoosePanel extends JPanel {
         grpColorRadios.add(rdoDagger);
         grpColorRadios.add(rdoSword);
         grpColorRadios.add(rdoHammer);
+    }
+
+    private void swapImageWeapon(ImageIcon daggerPic) {
     }
 
     private void addCharacterStats(Font myFont) {
@@ -520,6 +523,6 @@ public JButton getBattleStartBtn() {
         return weaponType;
     }
 
-    public JButton getStartBattleBtn() {
-    }
+
+
 }

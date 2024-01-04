@@ -13,7 +13,7 @@ public class Sword extends Weapon{
         super(attack, weight);
 
         //Set image for its shape
-        swordPic = new ImageIcon(this.getClass().getResource("/Image/Sword.jpg"));
+        swordPic = new ImageIcon(this.getClass().getResource("/Images/Sword.jpg"));
     }
 
     public ImageIcon getSwordPic() {

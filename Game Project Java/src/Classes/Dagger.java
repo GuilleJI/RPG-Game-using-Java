@@ -12,7 +12,7 @@ public class Dagger extends Weapon {
         super(attack, weight);
 
         //Set image for this shape
-        daggerPic = new ImageIcon(this.getClass().getResource("/Image/Dagger.jpg"));
+        daggerPic = new ImageIcon(this.getClass().getResource("/Images/Dagger.jpg"));
     }
 
     public ImageIcon getDaggerPic() {
