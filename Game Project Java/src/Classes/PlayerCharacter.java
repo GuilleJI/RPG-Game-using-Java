@@ -15,6 +15,7 @@ public abstract class PlayerCharacter {
 
     public PlayerCharacter(String name, int attack, int weight, int agility, int hitPoints){
         this.name = name;
+        int[] stats = new int[0];
         this.baseAttack = stats[0];
         this.defense = stats[1];
         this.agility = stats[2];

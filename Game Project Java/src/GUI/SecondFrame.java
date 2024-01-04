@@ -86,4 +86,6 @@ public class SecondFrame extends JFrame {
         return theHammer;
     }
 
+    public static Sword getTheSwrod() {
+    }
 }

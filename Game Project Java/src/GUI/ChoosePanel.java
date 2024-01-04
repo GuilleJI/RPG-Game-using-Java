@@ -197,6 +197,7 @@ public class ChoosePanel extends JPanel {
 
     }
 
+
     private void addWeaponSelect(Font myFont) {
         Font selectTitle = new Font("Baskerville", Font.BOLD, 30);
         //Create the Dagger radio button
@@ -432,6 +433,24 @@ public class ChoosePanel extends JPanel {
         }
         return monsterStats;
     }
+    //    This method gets the name of the monster that the player will be facing in the game.
+//    If the monster's name has not been set, a random name is chosen from a list of possible names.
+//     @return the name of the monster
+    public static String getMonsterName() {
+        if (currentMonsterName == null) {
+            Random rand = new Random();
+            String[] monsterName = new String[3];
+            int num = rand.nextInt(3);
+            monsterName[0] = "Grunk the Mighty Bouldercrusher";
+            monsterName[1] = "Infernabeast, Tormentaurox";
+            monsterName[2] = "Maelroth the Abyssal Sovereign";
+
+            currentMonsterName = monsterName[num];
+        }
+
+        return currentMonsterName;
+    }
+
 // Returns the Start Battle button and sets its ActionListener to create a new character based on user input and pass it to the result window
 // If no character is selected, nothing happens
 // Uses getTextFieldsData() to get character stats and nameText to get character name
@@ -501,4 +520,6 @@ public JButton getBattleStartBtn() {
         return weaponType;
     }
 
+    public JButton getStartBattleBtn() {
+    }
 }
