@@ -36,5 +36,17 @@ public class MainFrame extends JFrame {
             dispose();
         });
 
+        startButton.setPreferredSize(new Dimension(200, 50));
+        startButton.setMaximumSize(new Dimension(200, 50));
+        startButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        subPanel.add(Box.createRigidArea(new Dimension(0, 50)));
+        subPanel.add(startButton);
+        subPanel.add(Box.createVerticalGlue());
+
+        mainPanel.add(subPanel, BorderLayout.CENTER);
+        add(mainPanel);
+
+        setVisible(true);
+
     }
 }
