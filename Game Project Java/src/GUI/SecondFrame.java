@@ -27,6 +27,17 @@ public class SecondFrame extends JFrame {
         setBounds(200, 200, 750, 800);
         setTitle("DND Game!");
         setLayout(new CardLayout());
+
+
+        //Add Panel "screens"
+        ChoosePanel chooseScreen = new ChoosePanel();
+        DisplayPanel displayScreen = new DisplayPanel(this);
+        add(chooseScreen);
+        chooseScreen.setBackground(Color.LIGHT_GRAY); //Added Background color for ChooseScreen
+        add(displayScreen);
+        displayScreen.setBackground(Color.LIGHT_GRAY); //Added Background color for DisplayScreen
+
+
     }
 
 }
